@@ -1,0 +1,29 @@
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+a {
+  display: block;
+  text-decoration: none;
+}
+body{
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: 1.5;
+}
+.container{
+  max-width: 1320px; // 1920-312(邊距)*2+24(左右 padding 12px) 
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+  @include pad{
+    max-width: 720px; // 768-36(邊距)*2+24(左右 padding 12px)
+  }
+  @include mobile{
+    max-width: 373px; // 375-13(邊距)*2+24(左右 padding 12px)
+  }
+}

@@ -1,0 +1,125 @@
+.headerBar{
+  @include mobile(){
+    flex-direction: column;
+  }
+}
+.logo{
+  height: 48.57px;
+  width: 80px;
+  background: url("../images/logo-white.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include mobile(){
+    width: 80px;
+    height: 48.57px;
+    margin: 16px auto;
+  }
+}
+.nav{
+  @include mobile(){
+    width: 100%;
+  }
+}
+.nav-manu li{
+  @include mobile(){
+    width: 50%;
+    border: 1px solid #FFFFFF;
+  }
+}
+.nav-manu li a{
+  padding: 25px 15px;
+  @include mobile(){
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 0;
+  }
+  }
+.nav-manu li:last-child a{
+  padding-right: 0;
+}
+
+// footer
+.footer{
+  @include mobile(){
+    padding-bottom: 24px;
+  }
+}
+.footer-info{
+  border-bottom: 1px solid #FFFFFF;
+}  
+.footer-info-nav-menu a{
+  padding: 0 24px;
+}
+.footer-info-nav-menu li:first-child a{
+  padding-left: 0;
+}
+.footer-info-nav-icon a{
+  @include mobile(){
+    margin-right: 8px;
+  }
+}
+.footer-info-nav-icon img{
+  height: 48px;
+  width: 48px;
+  @include mobile(){
+    height: 24px;
+    width: 24px;
+  }
+}
+.footer-info{
+  @include mobile(){
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+.footer-info-nav-menu{
+  @include mobile(){
+    display: none;
+  }
+}
+.footer-info-contact a{
+  @include mobile(){
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.footer-info-contact span{
+  font-size: 48px;
+  margin-right: 16px;
+  @include mobile(){
+    font-size: 24px;
+    margin-right: 8px;
+  }
+}
+.footer-right{
+  @include mobile(){
+    display: block;
+  }
+  p{
+    @include mobile(){
+      padding-bottom: 8px;
+    }
+  }
+  a{
+    font-size: 14px;
+    @include mobile(){
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  ul{
+    @include mobile(){
+      display: block;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    li:first-child{
+      @include mobile(){
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
